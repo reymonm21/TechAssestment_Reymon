@@ -19,7 +19,7 @@ This should
 3. Complete the Wikipedia home page actions test
     - In `wikipediaHomepageActions.ts`, finish the existing test so that it correctly implements the test case in the file
 4. Please record a two minute Loom video (loom.com) walking through the code and showing a successful execution of the code. Please also add one minute as to why you want to work at Ranger (ranger.net)
-    - Please update this README and add a link to the loom video here: https://www.loom.com/share/5e2439faf25049dba0e52bd62012da21?sid=d42f4176-7ee5-4d71-92dd-720bb9b98d9e
+    - Please update this README and add a link to the loom video here: https://www.loom.com/share/5e2439faf25049dba0e52bd62012da21?sid=feec65c9-1578-4403-857f-1197cde2b1a6
     
 
 Each test file contains more detailed instructions.
