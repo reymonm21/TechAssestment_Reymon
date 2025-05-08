@@ -21,7 +21,7 @@ export async function run(page: Page, params: {}) {
     const rawText = await totalArticlesLink.textContent();
     const cleanedText = rawText?.replace(/,/g, '') ?? '0';
     const articleCount = parseInt(cleanedText, 10);
-    expect(articleCount).toBeLessThan(7000000);
+    expect(articleCount, 'Expected less than 7,000,000 and received ' + rawText).toBeLessThan(7000000);
     
     /** STEP: Click the link to view the total number of articles in English */
     await totalArticlesLink.click();

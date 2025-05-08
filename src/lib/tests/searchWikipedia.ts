@@ -33,10 +33,11 @@ export async function run(page: Page, params: {}) {
     await artificialIntelligenceLink.click();
     
     /** STEP: Click the View History link */
-    page.getByRole('link', {name: 'View history',}).first().click();
+    await page.getByRole('link', {name: 'View history',}).first().click();
     
     /** ASSERTION: Confirm the last user made changes */
     const latestUser = await page.locator('.mw-userlink').first().textContent();
-    expect(latestUser).toBe('Grayfell');
+    expect(latestUser).toBeTruthy();
+    expect(latestUser, 'Expected latest editor to be "Worstbull" but found different user or none').toBe('Worstbull');
 
 }
