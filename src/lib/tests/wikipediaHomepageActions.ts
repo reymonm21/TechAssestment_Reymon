@@ -25,6 +25,8 @@ export async function run(page: Page, params: {}) {
     
     /** STEP: Click the link to view the total number of articles in English */
     await totalArticlesLink.click();
+    const statisticsHeader = page.getByRole('heading', { name: 'Statistics' });
+    await expect(statisticsHeader, 'Expected page to be redirected to Statistics and it was not').toBeVisible();
 
     /** According to the Wikipedia webpage, this option has been disabled in the 'Statistics' page. 
      
